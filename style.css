@@ -1,0 +1,358 @@
+html {
+    scroll-behavior: smooth;
+    --bgcolor:#1c343cda; 
+    /* --bgcolor:#020D2E ; 
+    --bgcolor:#020D2E; */
+  }
+
+/* Sets default behaviour of the body */
+body{
+    /* background-color: burlywood; */
+    display: grid;
+    grid-template-columns: 
+    "header Nav"
+    "main"
+    "footer";
+    margin: 20px;
+}
+
+/* Holds the Logo and navbar. The code displays them in flex */
+
+.logo-nav{
+    display: flex;
+    width: 100%;
+    margin-bottom: .2rem ;
+}
+
+/* The code sets a margin to left side of the navbar div to push it to the right side of the page */
+
+.navbar{
+    margin-left: auto;
+}
+
+/* This code adds 10px marigin to give some space between the link images inside navbar */
+.navbar  a{
+    margin: 10px;
+  }
+
+/* This code sets a size to the images that act as a link in the navbar */
+
+.navbar  img{
+  width: 1.5rem;
+}
+
+/* The code sets width, height and color to the cover class */
+
+.cover{
+    height:70vh;
+    width:100%;
+    background-color: var(--bgcolor);
+}
+
+/* Code below styles the Logo */
+
+.logo{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+/* Code below position the content inside the cover */
+
+.content {
+    display: inline-block;
+    position: relative;
+    top: 40%;
+    left:20%;
+}
+
+/* Code below styles the content inside the cover */
+
+.content > h1{
+    font-size: 3rem;
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+}
+
+.content > h2{
+    font-size: 2rem;
+    padding: 0px;
+    margin: 0px;
+    color: #000; 
+    background-color:#E4E4E4;    
+}
+
+/* centers all the text under class center */
+
+.center{
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Styling About us section*/
+
+.aboutus{
+    display: inline-block;
+    margin: 2.5rem 0;
+}
+
+.about-bh{
+    position: absolute;
+    top:88.9%;
+    left:44.40%;
+    width: 8.5rem;
+    height: 4rem;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.about-bw{
+    position: absolute;
+    top:90%;
+    left:43.91%;
+    width: 9.3rem;
+    height: 3.2rem;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.aboutus > p{
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: auto;
+    padding: 0rem 5rem;
+}
+
+.aboutus > a{
+    display: block;
+    text-align: center;
+    margin: 2rem 0 0 0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #004e22;
+    text-shadow: 0.01rem 0.01rem #00e0e7;
+
+}
+
+/* Styling why us section*/
+
+.whyus{
+    display: inline-block;
+    height:45vh;
+    width:100%;
+    background-color: var(--bgcolor);
+}
+
+.why-bh{
+    position: absolute;
+    top:132.9%;
+    left:44.40%;
+    width: 8.5rem;
+    height: 4rem;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.why-bw{
+    position: absolute;
+    top:134%;
+    left:43.91%;
+    width: 9.3rem;
+    height: 3.2rem;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.whyus > h2{
+    color: #fff;
+}
+
+.whyus > p{
+    font-size: 1.2rem;
+    text-align: justify;
+    margin:  auto;
+    padding: 1rem 5rem;
+    color: #fff;
+}
+
+.whyus > a{
+    display: block;
+    text-align: center;
+    margin: 2rem 0 0 0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #004e2283;
+    text-shadow: 0.0rem 0.01rem #8efff6;
+}
+
+/* Code below stes a width to the workflow heading image */
+
+.workflow-header > img{
+    max-width: 100%;
+    object-fit: contain;
+   }
+
+   /* Styling Process flow section*/
+
+.workflow{
+    background-color: #000;
+    border: 2px dashed rgb(198, 198, 198);
+}   
+.Grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0px 50px 100px 50px;
+    padding: 20px;
+}
+
+.Grid > div{
+    border: 1px solid black;
+    align-self: center;
+    justify-self: center;
+    width: 100px;
+    height: 50px;
+    padding: 25px;
+    margin: 40px 40px 40px 40px;
+    text-align: center;
+    background-image: Linear-gradient(to right, rgba(37, 95, 90, 0.587), rgb(163, 163, 163));
+    color: rgb(231, 231, 231);
+}
+
+ /* Styling Our clients section*/
+
+ .clients{
+    border: 3px solid black;
+    padding: 1rem;
+    margin: 0px 50px 100px 50px;
+ }
+
+ .flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+
+ .flex img{
+    width: 10%;
+    margin-bottom: 1rem;
+ }
+ 
+ /* Styling footer section*/
+
+footer{
+    background-color: var(--bgcolor);
+    height: 40vh;
+ }
+
+ .contact{
+    display: flex;
+    border-bottom: 1px solid rgb(127, 127, 127);
+    justify-content: space-around;
+ }
+
+ .contact > *{
+    color: #fff;
+ }
+
+ .enquiry p{
+    line-height: 0.5rem;
+ } 
+ 
+ .support p{
+    line-height: 0.5rem;
+ }
+
+ .address p{
+    line-height: 0.5rem;
+ }
+
+ .contact a{
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid rgb(206, 206, 206);
+ }
+
+ .legal{
+    display: flex;
+    justify-content: center;
+
+}
+
+ .legal p{
+    color: #fff;
+    margin: 1rem;
+
+
+ }
+
+ .legal a{
+    color: #fff;
+    text-decoration: none;
+ }
+
+ /* Styling Services page*/
+
+ /* header */
+
+  .intro > h1{
+    font-size: 5rem;
+    margin-bottom:0 ;
+  }
+
+  .intro > p{
+    font-size: 1.5rem;
+    margin-top:0 ;
+    padding: 1rem;
+
+  }
+
+ /* List out the services */
+ .services > div{
+    display: flex;
+    width: 70vw;
+    height: 40vh;
+    background-color: var(--bgcolor);
+    color: #fff;
+    border: 1px solid rgba(128, 128, 128, 0.568);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 2rem;
+    text-decoration: underline;
+ }
+
+ .services > div:nth-child(1){
+    margin-top: 5rem;
+ }
+
+ .services > div:nth-child(5){
+    margin-bottom: 5rem;
+ }
+
+ /* Styles pricing page */
+
+.wrapper{
+    display: grid;
+    /* grid-template-areas: ; */
+    justify-content: center;
+    align-content: center;
+    width: 50vw;
+    height: 75vh;
+    margin: 5rem auto;
+    background-color: var(--bgcolor);
+    color: #fff;
+    font-size: 1rem;
+}
+
+.wrapper > *{
+    align-self: center;
+    justify-self: center;
+    margin: 20px;
+    border: 1px solid grey;
+    padding: 20px;
+    grid-gap: 20px;
+
+}
+
+.quote{
+    text-align: center;
+    text-transform:capitalize;
+    margin: 5rem auto;
+    font-size: 1.5rem;
+} 
